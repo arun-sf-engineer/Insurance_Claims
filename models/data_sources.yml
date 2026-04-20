@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: claims
+    database: Claims_DB
+    schema: landing_zone
+    tables:
+      - name: insuranceclaimsdata
+      - name: CLAIM_TYPE_MASTER
+      - name: CLAIM_STATUS_MASTER
+      - name: PATIENT_GENDER_MASTER

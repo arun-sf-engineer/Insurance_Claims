@@ -40,3 +40,10 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+vars:
+  claims_db: 'Claims_DB'
+  land_sch: 'landing_zone'
+  hist_sch: 'hist_zone'
+  stg_zone: 'staging_zone'
+  cur_zone: 'curated_zone'
+  cons_zone: 'consumer_zone'
