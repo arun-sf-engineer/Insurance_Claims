@@ -3,7 +3,8 @@
             materialized = 'table',
             database = var('tasty_bytes_db'),
             schema = var('bronze_sch'),
-            alias = 'Country'
+            alias = 'Country',
+            tags = ['bronze']
 
     )
 }}
