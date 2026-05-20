@@ -9,3 +9,13 @@ sources:
       - name: CLAIM_TYPE_MASTER
       - name: CLAIM_STATUS_MASTER
       - name: PATIENT_GENDER_MASTER
+      - name: CLAIM_SUBMISSION_METHOD_MASTER
+      - name: EMPLOYMENT_STATUS_MASTER
+      - name: MARTIAL_STATUS_MASTER
+      - name: PROVIDER_SPECIALITY_MASTER
+  - name: Tasty_Bytes
+    database: tb_101
+    schema: raw_pos
+    tables:
+      - name: country
+      
