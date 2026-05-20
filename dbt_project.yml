@@ -47,3 +47,5 @@ vars:
   stg_zone: 'staging_zone'
   cur_zone: 'curated_zone'
   cons_zone: 'consumer_zone'
+  tasty_bytes_db: 'tb_101'
+  bronze_sch: 'raw_pos'
