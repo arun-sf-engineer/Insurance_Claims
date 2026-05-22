@@ -8,6 +8,7 @@
     )
 }}
 
+with truck as (
 SELECT
     $1 AS truck_id,
     $2 AS menu_type_id,
@@ -22,5 +23,7 @@ SELECT
     $10 AS model,
     $11 AS ev_flag,
     $12 AS franchise_id,
-    $13 AS truck_opening_date
-FROM @tb_101.public.s3load/raw_pos/truck/
+    $13 AS truck_opening_date,
+    current_timestamp() as load_ts
+FROM @tb_101.public.s3load/raw_pos/truck/)
+select * from truck

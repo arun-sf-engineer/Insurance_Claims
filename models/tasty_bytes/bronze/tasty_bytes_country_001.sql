@@ -9,7 +9,7 @@
     )
 }}
 
-
+WITH COUNTRY AS (
 SELECT
     $1 AS country_id, 
     $2 AS country,
@@ -17,5 +17,7 @@ SELECT
     $4 AS iso_country, 
     $5 AS city_id, 
     $6 AS city, 
-    $7 AS city_population
-FROM @tb_101.public.s3load/raw_pos/country/
+    $7 AS city_population,
+    current_timestamp() AS Load_TS
+FROM @tb_101.public.s3load/raw_pos/country/)
+SELECT * FROM COUNTRY
