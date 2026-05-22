@@ -7,7 +7,7 @@
             tags = ['bronze']
     )
 }}
-
+WITH menu as (
 SELECT $1 AS menu_id,
     $2 AS menu_type_id,
     $3 AS menu_type,
@@ -19,4 +19,5 @@ SELECT $1 AS menu_id,
     $9 AS cost_of_goods_usd,
     $10 AS sale_price_usd,
     $10 AS menu_item_health_metrics_obj
-FROM @tb_101.public.s3load/raw_pos/menu/
+FROM @tb_101.public.s3load/raw_pos/menu/)
+select * from menu

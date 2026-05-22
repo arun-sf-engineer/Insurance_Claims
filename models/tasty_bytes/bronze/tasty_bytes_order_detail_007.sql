@@ -8,6 +8,7 @@
     )
 }}
 
+with order_detail as (
 SELECT
 $1 order_detail_id,
 $2 AS order_id,
@@ -18,4 +19,5 @@ $6 AS quantity,
 $7 AS unit_price,
 $8 AS price,
 $9 AS order_item_discount_amount
-FROM @tb_101.public.s3load/raw_pos/order_detail/
+FROM @tb_101.public.s3load/raw_pos/order_detail/)
+select * from order_detail

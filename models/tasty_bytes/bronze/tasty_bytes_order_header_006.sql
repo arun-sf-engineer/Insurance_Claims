@@ -8,6 +8,7 @@
     )
 }}
 
+with order_header as (
 SELECT 
     $1 AS order_id,
     $2 AS truck_id,
@@ -24,6 +25,8 @@ SELECT
     $13 AS order_amount,
     $14 AS order_tax_amount,
     $15 AS order_discount_amount,
-    $16 AS order_total
+    $16 AS order_total,
+    current_timestamp() as load_ts
 FROM 
-@tb_101.public.s3load/raw_pos/order_header/
+@tb_101.public.s3load/raw_pos/order_header/)
+select * from order_header
