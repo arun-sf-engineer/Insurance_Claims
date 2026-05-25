@@ -46,6 +46,11 @@ models:
         +database: TB_101
         +schema: silver
         +tags: ['silver']
+      gold:
+        +materialized: view
+        +database: TB_101
+        +schema: gold
+        +tags: ['gold']
 vars:
   claims_db: 'Claims_DB'
   land_sch: 'landing_zone'
