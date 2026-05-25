@@ -18,6 +18,7 @@ $5 AS line_number,
 $6 AS quantity,
 $7 AS unit_price,
 $8 AS price,
-$9 AS order_item_discount_amount
+$9 AS order_item_discount_amount,
+current_timestamp() as load_ts
 FROM @tb_101.public.s3load/raw_pos/order_detail/)
 select * from order_detail
